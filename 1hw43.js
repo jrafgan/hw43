@@ -1,6 +1,10 @@
 var Hamburger = function (type, topping) {
-    if (type === Hamburger.size_small) {
-
+    if (type === Hamburger.size_small || type === Hamburger.size_large) {
+        console.log('valid');
+    } else {
+        throw new Error('Size is incorrect');
+    }
+    if (type === 'small') {
         console.log(type + ' CheeseBurger + topping ' + topping);
         var typePrice = 60;
         var typeCalories = 200;
