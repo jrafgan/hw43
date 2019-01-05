@@ -1,0 +1,72 @@
+.main_div {
+    display: grid;
+    grid-template-columns: repeat(3, 120px);
+    grid-template-rows: repeat(6, 40px);
+}
+
+.grand_total {
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    border: 1px solid saddlebrown;
+    place-content: center;
+    border-radius: 10px;
+}
+
+.comon {
+    display: grid;
+    place-content: center;
+}
+.button_div {
+    display: grid;
+    grid-template-columns: repeat(4, 90px);
+    margin-top: 10px;
+}
+.value1,
+.value3,
+.value5,
+.value10 {
+    border-radius: 50%;
+    background: darkgrey;
+    width: 40px;
+    height: 40px;
+    margin: auto;
+}
+.container {
+    border: 1px solid darkgrey;
+    width: fit-content;
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 1px 0 rgba(50, 50, 50, 0.75);
+}
+
+.form {
+    display: grid;
+    place-content: center;
+}
+
+#login-btn {
+    display: grid;
+    margin: 5px auto;
+}
+
+#login,
+#pswd {
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.empty_pb {
+    display: grid;
+    margin: 10px auto 0;
+}
+
+button {
+    border-radius: 10px;
+    box-shadow: 3px 3px 1px 0 rgba(50, 50, 50, 0.75);
+    outline: none;
+}
+

@@ -13,8 +13,6 @@ var Hamburger = function (type, topping) {
         console.log(type + ' CheeseBurger + topping ' + topping);
         var typePrice = 80;
         var typeCalories = 300;
-    } else {
-        throw new Error('Size is incorrect');
     }
 
     this.getPrice = function () {

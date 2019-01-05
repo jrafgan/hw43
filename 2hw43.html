@@ -7,15 +7,52 @@
             src="https://code.jquery.com/jquery-3.3.1.js"
             integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
             crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div class="container">
+<div class="form">
+    <form>
+        <input type="text" name="login" id="login" placeholder="Your username:"><br>
+        <input type="password" name="pwd" id="pswd" placeholder="Your Password:"><br>
+        <button type="button" id="login-btn">Login</button>
+    </form>
+</div>
 
-<button id="add_one">Add 1</button>
-<button id="add_three">Add 3</button>
-<button id="add_five">Add 5</button>
-<button id="add_ten">Add 10</button>
+
+    <div class="main_div">
+        <div class="grand_total">Grand Total : 0</div>
+        <div class="value comon">Coin Value :</div>
+        <div class="quantity comon">Quantity :</div>
+        <div class="total comon">Total :</div>
+        <div class="value1 comon">1</div>
+        <div class="quantity1 comon">0</div>
+        <div class="total1 comon">0</div>
+        <div class="value3 comon">3</div>
+        <div class="quantity3 comon">0</div>
+        <div class="total3 comon">0</div>
+        <div class="value5 comon">5</div>
+        <div class="quantity5 comon">0</div>
+        <div class="total5 comon">0</div>
+        <div class="value10 comon">10</div>
+        <div class="quantity10 comon">0</div>
+        <div class="total10 comon">0</div>
+    </div>
+    <div class="button_div">
+        <button id="add_one">Add 1</button>
+        <button id="add_three">Add 3</button>
+        <button id="add_five">Add 5</button>
+        <button id="add_ten">Add 10</button>
+    </div>
+
+<div>
+    <button class="empty_pb">Clear Local Storage</button>
+</div>
+</div>
+<script src="md5.min.js"></script>
 <script src="obserever.js"></script>
 <script src="piggyBank.js"></script>
+
 
 </body>
 </html>

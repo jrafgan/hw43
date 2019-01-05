@@ -8,7 +8,7 @@ Observer.prototype.on = function (type, listener) {
     this.listeners[type].push(listener);
 };
 
-Observer.prototype.trigger = function (type, event) { // event это аргумент из вызова "John"
+Observer.prototype.trigger = function (type, event) { //
     if (this.listeners[type]) {
         this.listeners[type].forEach(function (listener) {
             listener(event);
